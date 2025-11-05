@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | AgriBrand</title>
+    <link rel="stylesheet" href="../static/style.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <!-- <img src="your-logo.png" alt="AgriBrand Logo" /> -->
+                    <h2>Agro Economy</h2>
+                </div>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="../about">About Us</a></li>
+                    <li><a href="../projects">Projects</a></li>
+                    <li><a href="../services">Services</a></li>
+                    <li><a href="../contact" class="active-link">Contact</a></li>
+                </ul>
+
+                <div class="login-btn">
+                    <button onclick="window.location.href='../contact'" class="btn-login">Contact</button>
+                </div>
+
+                <div class="menu-toggle" id="menuToggle">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-us">
+        <div class="contact-header">
+            <h1>Contact us.</h1>
+            <p>
+                Ready to join the AgriBrand family? Have questions about our projects or services?
+                We're here to help you every step of the way.
+            </p>
+        </div>
+
+        <div class="contact-content">
+            <!-- Call Center -->
+            <div class="contact-box">
+                <h2>Call Center</h2>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <div class="icon">📞</div>
+                        <div>
+                            <p class="contact-title">Consultancy</p>
+                            <p class="contact-info">+234 800 000 0000</p>
+                        </div>
+                        <button class="copy-btn" data-copy="+234 800 000 0000">Copy</button>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="icon">📞</div>
+                        <div>
+                            <p class="contact-title">Exports</p>
+                            <p class="contact-info">+234 800 000 0000</p>
+                        </div>
+                        <button class="copy-btn" data-copy="+234 800 000 0000">Copy</button>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="icon">📞</div>
+                        <div>
+                            <p class="contact-title">Agro-Trourism</p>
+                            <p class="contact-info">+234 800 000 0000</p>
+                        </div>
+                        <button class="copy-btn" data-copy="+234 800 000 0000">Copy</button>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="icon">📞</div>
+                        <div>
+                            <p class="contact-title">Production</p>
+                            <p class="contact-info">+234 800 000 0000</p>
+                        </div>
+                        <button class="copy-btn" data-copy="+234 800 000 0000">Copy</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Email Support -->
+            <div class="contact-box">
+                <h2>Email Support</h2>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <div class="icon">✉️</div>
+                        <div>
+                            <p class="contact-title">For Production</p>
+                            <p class="contact-info">agrogreeneconomy@yahoo.com</p>
+                        </div>
+                        <button class="copy-btn" data-copy="agrogreeneconomy@yahoo.com">Copy</button>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="icon">✉️</div>
+                        <div>
+                            <p class="contact-title">For Distribution</p>
+                            <p class="contact-info">agrogreeneconomy@yahoo.com</p>
+                        </div>
+                        <button class="copy-btn" data-copy="agrogreeneconomy@yahoo.com">Copy</button>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="icon">✉️</div>
+                        <div>
+                            <p class="contact-title">For Marketing</p>
+                            <p class="contact-info">agrogreeneconomy@yahoo.com</p>
+                        </div>
+                        <button class="copy-btn" data-copy="agrogreeneconomy@yahoo.com">Copy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <img src="static/logo.jpeg" width="100" height="100" alt="logo" />
+                <h3>Agro Economy</h3>
+                <p>Building sustainable agricultural systems through technology, innovation, and community.</p>
+            </div>
+    
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="../about">About</a></li>
+                    <li><a href="../projects">Projects</a></li>
+                    <li><a href="../services">Services</a></li>
+                    <li><a href="../contact">Contact</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Email: <a href="mailto:agrogreeneconomy@yahoo.com">agrogreeneconomy@yahoo.com</a></p>
+                <p>Phone: <a href="tel:+348000000000"></a> +234 800 000 0000</p>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2025 Agro Economy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Copy to clipboard
+        document.querySelectorAll('.copy-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                navigator.clipboard.writeText(btn.dataset.copy);
+                btn.textContent = 'Copied!';
+                setTimeout(() => btn.textContent = 'Copy', 2000);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
