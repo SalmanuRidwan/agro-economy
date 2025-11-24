@@ -1,1 +1,178 @@
-<h2>Our Services</h2>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services | Agro Economy</title>
+    <link rel="stylesheet" href="../static/style.css" />
+
+    <style>
+        .services-hero {
+            background: url('../static/gallery-5.jpeg') center/cover no-repeat;
+            padding: 6rem 2rem;
+            color: #fff;
+            text-align: center;
+        }
+
+        .services-hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        .services-section {
+            padding: 5rem 2rem;
+            background: #ffffff;
+        }
+
+        .services-container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .service-block {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+            align-items: center;
+            margin-bottom: 5rem;
+        }
+
+        .service-text h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-text p {
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .service-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .service-gallery img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .service-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .service-block {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href='/'>
+                        <img src="../static/logo-label.png" alt="AgroGreenEconomy Logo" />
+                    </a>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="../about">About</a></li>
+                    <li><a href="../projects">Projects</a></li>
+                    <li><a href="../services" class="active">Services</a></li>
+                    <li><a href="../contact">Contact</a></li>
+                </ul>
+
+                <div class="login-btn">
+                    <button onclick="window.location.href='../contact'" class="btn-login">Contact</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="services-hero">
+        <h1>Our Services</h1>
+        <p>Delivering value across the agricultural value chain</p>
+    </section>
+
+    <section class="services-section">
+        <div class="services-container">
+
+            <!-- Service 1 -->
+            <div class="service-block">
+                <div class="service-text">
+                    <h3 style="color:black">Crop Production</h3>
+                    <p style="color:black">
+                        We cultivate premium crops using modern farming techniques, providing reliable supply chains
+                        that meet local and global market standards.
+                    </p>
+                </div>
+                <div class="service-gallery">
+                    <img src="../static/crop6.jpeg" alt="">
+                    <img src="../static/crop2.jpeg" alt="">
+                    <img src="../static/crop3.jpeg" alt="">
+                    <img src="../static/crop4.jpeg" alt="">
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-block">
+                <div class="service-text">
+                    <h3>Agro Processing</h3>
+                    <p>
+                        Our processing units transform raw produce into high-quality finished products while adhering
+                        to safety, hygiene, and export standards.
+                    </p>
+                </div>
+                <div class="service-gallery">
+                    <img src="../static/crop12.jpeg" alt="">
+                    <img src="../static/crop11.jpeg" alt="">
+                    <img src="../static/crop9.jpeg" alt="">
+                    <img src="../static/crop7.jpeg" alt="">
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-block">
+                <div class="service-text">
+                    <h3>Export & Distribution</h3>
+                    <p>
+                        We ensure seamless export of agricultural commodities through efficient logistics,
+                        packaging excellence, and international compliance.
+                    </p>
+                </div>
+                <div class="service-gallery">
+                    <img src="../static/export1.png" alt="">
+                    <img src="../static/export2.png" alt="">
+                    <img src="../static/export3.jpeg" alt="">
+                    <img src="../static/export4.jpeg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <img src="../static/logo.jpeg" width="100" height="100" alt="logo" />
+                <h3>Agro Economy</h3>
+                <p>Building sustainable agricultural systems through technology, innovation, and community.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Agro Economy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
